@@ -13,7 +13,7 @@ const {
 dotenv.config({
     path: ".env"
 })
-let mongodbPath = process.env.MONGO_LOCAL
+let mongodbPath = process.env.MONGO_ATLAS
 let port = process.env.PORT
 const server = http.createServer(app)
 const io = new Server(server, {
